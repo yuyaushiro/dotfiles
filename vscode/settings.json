@@ -1,0 +1,84 @@
+{
+//"workbench.startupEditor": "newUntitledFile",
+// フォント ファミリ
+//"editor.fontFamily": "Ricty",
+// フォント サイズ
+"editor.fontSize": 12,
+
+// Vim拡張の設定
+"vim.insertModeKeyBindings": [
+  // jjでEscの代わり
+  {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+  }
+],
+"vim.normalModeKeyBindingsNonRecursive": [
+  {
+      "before": [ "J" ],
+      "after" : [ "j", "j", "j" ]
+  },
+  {
+      "before": [ "K" ],
+      "after" : [ "k", "k", "k" ]
+  },
+  {
+      "before": [ "L" ],
+      "after" : [ "l", "l", "l" ]
+  },
+  {
+      "before": [ "H" ],
+      "after" : [ "h", "h", "h" ]
+  },
+  {
+      "before": [ "W" ],
+      "after" : [ "w", "w", "w" ]
+  },
+  {
+      "before": [ "B" ],
+      "after" : [ "b", "b", "b" ]
+  }
+],
+"vim.visualModeKeyBindingsNonRecursive": [
+  {
+      "before": [ "J" ],
+      "after" : [ "j", "j", "j" ]
+  },
+  {
+      "before": [ "K" ],
+      "after" : [ "k", "k", "k" ]
+  },
+  {
+      "before": [ "L" ],
+      "after" : [ "l", "l", "l" ]
+  },
+  {
+      "before": [ "H" ],
+      "after" : [ "h", "h", "h" ]
+  },
+  {
+      "before": [ "W" ],
+      "after" : [ "w", "w", "w" ]
+  },
+  {
+      "before": [ "B" ],
+      "after" : [ "b", "b", "b" ]
+  }
+],
+"files.trimTrailingWhitespace": false,
+// インデントガイドを表示
+"editor.renderIndentGuides": true,
+// 80,100文字目にガイドを表
+"editor.rulers": [80, 100],
+// ファイルの末尾を改行で終わらせる
+"files.insertFinalNewline": true,
+// タブをスペース2つ分に
+"editor.tabSize": 2,
+// pythonだけはスペース4つ分に
+"[python]": {
+  "editor.tabSize": 4
+},
+"editor.acceptSuggestionOnCommitCharacter": false,
+"editor.minimap.enabled": false,
+"workbench.iconTheme": "vscode-icons"
+}

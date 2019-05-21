@@ -11,3 +11,9 @@ deploy_mac:
 # macOS
 init_mac:
 		@DOTPATH=$(DOTPATH) bash $(DOTPATH)/etc/init/macOS/init.sh
+
+## Setup VSCode settings
+vscode_json:
+		/bin/bash vscode/install_settings_json.sh
+vscode_extensions:
+		/bin/bash vscode/install_extensions.sh
