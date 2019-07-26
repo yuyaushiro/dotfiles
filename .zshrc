@@ -4,7 +4,15 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Prompt
-PROMPT='%F{yellow}%n@%m%f:%F{blue}%~%f$ '
+# PROMPT='%F{yellow}%n@%m%f:%F{blue}%~%f$ '
+
+#LS_COLORSを設定しておく
+export LSCOLORS=gxfxcxdxbxegedabagacad
+export LS_COLORS='di=36:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+#ファイル補完候補に色を付ける
+autoload -U compinit
+compinit
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # Alias
 alias mv='mv -i'

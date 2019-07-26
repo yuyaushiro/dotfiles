@@ -17,3 +17,7 @@ vscode_json:
 		/bin/bash vscode/install_settings_json.sh
 vscode_extensions:
 		/bin/bash vscode/install_extensions.sh
+
+## Setup prompt
+prompt:
+		/bin/bash zprezto/install_mypure.sh

@@ -3,3 +3,4 @@
 `make deploy_mac`
 `make vscode_json`  
 `make vscode_extensions`  
+`make prompt`  
