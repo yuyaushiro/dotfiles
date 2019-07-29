@@ -80,5 +80,6 @@
 },
 "editor.acceptSuggestionOnCommitCharacter": false,
 "editor.minimap.enabled": false,
-"workbench.iconTheme": "vscode-icons"
+"workbench.iconTheme": "vscode-icons",
+"editor.acceptSuggestionOnEnter": "off"
 }
